@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+    regressao-logistica:
+        build: .
+        ports:
+            - '8501:8501'
+        volumes:
+            - ./app:/home/app
+        container_name: regressao-logistica
